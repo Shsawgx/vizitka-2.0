@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шкуро Артемий | Web-разработчик</title>
+    
+    <link rel="icon" href="icon.png" type="image/png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="card">
+        <img src="my-photo.jpg" alt="Шкуро Артемий" class="avatar-img">
+        <div class="name-wrapper">
+            <h1>Шкуро Артемий</h1>
+        </div>
+        <span class="role-tag">WEB DEVELOPER</span>
+        <p>Разработка сайтов любой сложности. Современный дизайн, адаптивность и высокая производительность.</p>
+        <button class="contact-btn" id="openModal">Связаться со мной</button>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>Связь со мной</h3>
+            <a href="https://t.me/redBlazeTide" target="_blank" class="social-link">Telegram</a>
+            <a href="https://vk.com/who_this_mann" target="_blank" class="social-link">ВКонтакте</a>
+
+            <div class="email-label">Скопировать почту:</div>
+            <div class="email-copy-box">
+                <span class="email-text" id="emailValue">artemijshkuro@mail.ru</span>
+                <button class="copy-trigger" id="copyBtn">Копировать</button>
+            </div>
+            <div class="close-modal" id="closeModal">Вернуться</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
